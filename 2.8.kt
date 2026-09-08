@@ -1,8 +1,4 @@
 fun main (){
-//Leia 4 números,
-    // aceitando apenas valores maiores que 0 e menores
-    // que 10. Calcule a média e:
-
     val numeros = mutableListOf<Int>()
     var soma = 0.0
 
@@ -14,7 +10,7 @@ fun main (){
             if (num > 0 && num < 10){
                 break
             }else {
-            println("numero invalido, tente novamente")
+                println("numero invalido, tente novamente")
             }
         }
         soma += num
@@ -22,4 +18,11 @@ fun main (){
     }
     val media = soma / numeros.size
     println("A média é: $media")
+
+    if ( media > 5 ){
+        print("Você passou no teste!")
+    }
+    else {
+        print("Tente novamente.")
+    }
 }
